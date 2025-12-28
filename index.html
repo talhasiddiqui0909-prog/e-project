@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosy Aircondition</title>
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+            <div class="container ">
+                <a class="navbar-brand fw-bold fs-2 " href="#">❄️Cosy Airconditioners</a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 active" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5" href="Buy.html">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5" href="#Contactus">Contact Us</a>
+                        </li>
+                    
+                    </ul>
+                    </div>
+                    </div>
+                    </nav>
+
+                    <section id="Home">
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="hero-slide" style="background-image:url('.vscode/0f3017e5-fc75-4493-b76a-a9d904ff700c.png')">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="hero-slide" style="background-image:url('.vscode/7abad4fa-20bf-4e0d-bfea-a603c8dedd40.png')">
+
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="hero-slide" style="background-image:url('.vscode/823331e5-496e-40e4-a231-11c06f54a2dc.png')">
+      
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<div class="sale">
+  <div class="design">
+  <h1>2026</h1>
+  </div>
+  <h1>New Year Sale</h1>
+  <p>We are giving 2026 new year special sale.</p>
+</div>
+
+<section class="product-section">
+
+  <div class="product-card" data-name="LG Dual Cool" data-price="$480" data-spec="Inverter • 1.5T">
+    <img src="lg-ac.png">
+    <h3>LG Dual Cool</h3>
+    <p class="price"><span>$480</span><br>$380</p>
+    <p class="desc">LG • Inverter • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('LG Dual Cool')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+
+  <div class="product-card" data-name="Samsung WindFree" data-price="$520" data-spec="Split • 1.5T">
+    <img src="samsung-ac.png">
+    <h3>Samsung WindFree</h3>
+    <p class="price"><span>$520</span><br>$420</p>
+    <p class="desc">Samsung • Split • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('Samsung WindFree')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+
+  <div class="product-card" data-name="Whirlpool Magicool" data-price="$450" data-spec="Split • 1.5T">
+    <img src="whirlpool-ac.png">
+    <h3>Whirlpool Magicool</h3>
+    <p class="price"><span>$450</span><br>$350</p>
+    <p class="desc">Whirlpool • Split • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('Whirlpool Magicool')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+   <div class="product-card" data-name="Whirlpool Magicool" data-price="$450" data-spec="Split • 1.5T">
+    <img src="whirlpool-ac.png">
+    <h3>Whirlpool Magicool</h3>
+    <p class="price"><span>$450</span><br>$350</p>
+    <p class="desc">Whirlpool • Split • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('Whirlpool Magicool')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+   <div class="product-card" data-name="Whirlpool Magicool" data-price="$450" data-spec="Split • 1.5T">
+    <img src="whirlpool-ac.png">
+    <h3>Whirlpool Magicool</h3>
+    <p class="price"><span>$450</span><br>$350</p>
+    <p class="desc">Whirlpool • Split • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('Whirlpool Magicool')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+   <div class="product-card" data-name="Whirlpool Magicool" data-price="$450" data-spec="Split • 1.5T">
+    <img src="whirlpool-ac.png">
+    <h3>Whirlpool Magicool</h3>
+    <p class="price"><span>$450</span><br>$350</p>
+    <p class="desc">Whirlpool • Split • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('Whirlpool Magicool')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+   <div class="product-card" data-name="Whirlpool Magicool" data-price="$450" data-spec="Split • 1.5T">
+    <img src="whirlpool-ac.png">
+    <h3>Whirlpool Magicool</h3>
+    <p class="price"><span>$450</span><br>$350</p>
+    <p class="desc">Whirlpool • Split • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('Whirlpool Magicool')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+   <div class="product-card" data-name="Whirlpool Magicool" data-price="$450" data-spec="Split • 1.5T">
+    <img src="whirlpool-ac.png">
+    <h3>Whirlpool Magicool</h3>
+    <p class="price"><span>$450</span><br>$350</p>
+    <p class="desc">Whirlpool • Split • 1.5T</p>
+
+    <div class="buttons">
+      <button class="details">Details</button>
+      <button class="cart" onclick="addToCart('Whirlpool Magicool')">Add to Cart</button>
+    </div>
+
+    <label class="compare">
+      <input type="checkbox" class="compare-check"> Compare
+    </label>
+  </div>
+
+</section>
+
+
+<div id="compareBar">
+  <p id="compareText">Select 2 products to compare</p> 
+  <button class="none" onclick="compareProducts()">Compare</button>
+</div>
+
+
+<section id="Contactus">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-fan"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>CoolFlow AC</h1>
+                    <p>Professional Air Conditioning Solutions</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-wrench"></i> Services</a></li>
+                    <li><a href="#"><i class="fas fa-snowflake"></i> Products</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> About</a></li>
+                    <li><a href="#" style="color: #ffcc00;"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-title">
+            <h2>Contact Us</h2>
+            <p>Get in touch with our team of air conditioning experts. We're here to help with installation, maintenance, and repairs.</p>
+        </div>
+        
+        <div class="contact-section">
+            <!-- Left Side - Contact Information -->
+            <div class="contact-info">
+                <div class="info-header">
+                    <h3>Get in Touch</h3>
+                    <p>Our team is ready to provide you with the best air conditioning solutions. Reach out to us using any of the methods below.</p>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Our Location</h4>
+                            <p>H.no.C119 wilayatabad no.2<br>Karachi , Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone Number</h4>
+                            <p>Main: (+92) 0313-2665989<br>Emergency: (+92) 0313-2665989</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <p>info@coolflowac.com<br>support@coolflowac.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="business-hours">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday <span>8:00 AM - 6:00 PM</span></p>
+                    <p>Saturday <span>9:00 AM - 4:00 PM</span></p>
+                    <p>Sunday <span>Emergency Services Only</span></p>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h4>24/7 Emergency Service</h4>
+                    <p>For urgent air conditioning issues, our emergency line is available 24/7. Call us anytime at (555) 987-6543.</p>
+                </div>
+            </div>
+            
+            <!-- Right Side - Contact Form -->
+            <div class="contact-form">
+                <h3 style="color: #2c6efc; margin-bottom: 30px; font-size: 1.8rem;">Send Us a Message</h3>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" class="form-control">
+                            <option value="">Select a service</option>
+                            <option value="installation">AC Installation</option>
+                            <option value="repair">AC Repair</option>
+                            <option value="maintenance">AC Maintenance</option>
+                            <option value="consultation">Free Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" class="form-control" placeholder="Please describe your needs or questions..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                
+                <div id="successMessage" class="success-message">
+                    <i class="fas fa-check-circle"></i> Thank you for your message! We'll get back to you within 24 hours.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CoolFlow AC</h3>
+                    <p>Providing top-quality air conditioning solutions for residential and commercial clients since 2005. Your comfort is our priority.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-snowflake"></i> AC Installation</a></li>
+                        <li><a href="#"><i class="fas fa-tools"></i> AC Repair</a></li>
+                        <li><a href="#"><i class="fas fa-clipboard-check"></i> Maintenance Plans</a></li>
+                        <li><a href="#"><i class="fas fa-filter"></i> Air Quality Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-home"></i> Smart Home Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> H.no.C119 wilayatabad no.2,Karachi , Pakistan</p>
+                    <p><i class="fas fa-phone-alt"></i> (+92) 0313-2665989</p>
+                    <p><i class="fas fa-envelope"></i> info@coolflowac.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8am-6pm</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Cosy Air Conditioning. All Rights Reserved. | Designed for comfort and efficiency</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="Logic.js"></script>
+</body>
+</html>
