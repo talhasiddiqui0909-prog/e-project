@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cosy Air Conditioners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        body {
+            margin-top: 100px;
+            background-color: #f5f9ff;
+            color: #333;
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+
+        }
+   .navbar{
+            background-color: #1a3a8f;
+    
+}     
+       
+      nav{
+      position: fixed;
+      font-weight: 700;
+      font-size: xx-large;
+    width: 100%;
+
+
+}
+ .navimg {
+            margin-right: 5px;
+            height: 70px;
+            width: 70px;
+        }
+        /* Main Content Styles */
+        .page-title {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #1a3a8f;
+        }
+        
+        .page-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .page-title p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background: linear-gradient(to bottom right, #1a3a8f, #2a5ad6);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(26, 58, 143, 0.2);
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+        
+        .info-header {
+            margin-bottom: 30px;
+        }
+        
+        .info-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        
+        .contact-icon {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #ffcc00;
+            font-size: 1.2rem;
+        }
+        
+        .contact-text h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .business-hours {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .business-hours h4 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+        
+        .business-hours p {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .business-hours span {
+            font-weight: 600;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #1a3a8f;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #1a3a8f;
+            box-shadow: 0 0 0 3px rgba(26, 58, 143, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(to right, #1a3a8f, #2a5ad6);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            display: block;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(to right, #2a5ad6, #1a3a8f);
+            box-shadow: 0 6px 15px rgba(26, 58, 143, 0.3);
+        }
+        
+        
+        footer {
+            background-color: #1a3a8f;
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 220px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            color: #ffcc00;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #ffcc00;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #ffcc00;
+            padding-left: 5px;
+        }
+        
+        .footer-column p {
+            margin-bottom: 15px;
+            color: #ddd;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        a{
+            color: white;
+        }
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: #ffcc00;
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ddd;
+            font-size: 0.9rem;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .contact-section {
+                flex-direction: column;
+            }
+            
+            .page-title h2 {
+                font-size: 2rem;
+            }
+            
+            .contact-info, .contact-form {
+                padding: 30px;
+            }
+        }
+        
+        
+        .success-message {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    
+     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top ">
+            <div class="container ">
+                <a class="navbar-brand fw-bold fs-2 " href="#"><img class="navimg" src="images/download.png" alt="">Cosy Airconditioners</a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5" href="Buy.html">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 active" href="Contact.html">Contact Us</a>
+                        </li>
+                    
+                    </ul>
+                    </div>
+                    </div>
+                    </nav>
+    
+
+    
+    <main class="container">
+        <div class="page-title">
+            <h2>Contact Us</h2>
+            <p>Get in touch with our team of air conditioning experts. We're here to help with installation, maintenance, and repairs.</p>
+        </div>
+        
+        <div class="contact-section">
+            
+            <div class="contact-info">
+                <div class="info-header">
+                    <h3>Get in Touch</h3>
+                    <p>Our team is ready to provide you with the best air conditioning solutions. Reach out to us using any of the methods below.</p>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Our Location</h4>
+                            <p>H no.c119 wialayatab no.2 <br>Karachi Pakistan, PC 7400</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone Number</h4>
+                            <p>Main: (+92) 313-2665989<br>Emergency: (+92) 313-2665989</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <p>infoairconditon37@gmail.com<br>supportairconditon37@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="business-hours">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday <span>8:00 AM - 6:00 PM</span></p>
+                    <p>Saturday <span>9:00 AM - 4:00 PM</span></p>
+                    <p>Sunday <span>Emergency Services Only</span></p>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h4>24/7 Emergency Service</h4>
+                    <p>For urgent air conditioning issues, our emergency line is available 24/7. Call us anytime at (+92) 0313-2665989.</p>
+                </div>
+            </div>
+            
+            
+            <div class="contact-form">
+                <h3 style="color: #1a3a8f; margin-bottom: 30px; font-size: 1.8rem;">Send Us a Message</h3>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" class="form-control">
+                            <option value="">Select a service</option>
+                            <option value="installation">AC Installation</option>
+                            <option value="repair">AC Repair</option>
+                            <option value="maintenance">AC Maintenance</option>
+                            <option value="consultation">Free Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" class="form-control" placeholder="Please describe your needs or questions..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                
+                <div id="successMessage" class="success-message">
+                    <i class="fas fa-check-circle"></i> Thank you for your message! We'll get back to you within 24 hours.
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Cosy Airconditioners</h3>
+                    <p>Providing top-quality air conditioning solutions for residential and commercial clients since 2005. Your comfort is our priority.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="About.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="Buy.html"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#sale"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a ><i class="fas fa-snowflake"></i> AC Installation</a></li>
+                        <li><a ><i class="fas fa-tools"></i> AC Repair</a></li>
+                        <li><a ><i class="fas fa-clipboard-check"></i> Maintenance Plans</a></li>
+                        <li><a ><i class="fas fa-filter"></i> Air Quality Solutions</a></li>
+                        <li><a ><i class="fas fa-home"></i> Smart Home Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> H no.c119 wilayatabad no.2, Karachi Pakistan</p>
+                    <p><i class="fas fa-phone-alt"></i> (+92) 313-2665989</p>
+                    <p><i class="fas fa-envelope"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZbjmnhDRXfKtgnGMhhlwgHGLpqfZgJDKQCqvzNFdPPPrQbqXDsvdzkWTNKfHtsTbHshXq"> airconditon37@gmail.com</a></p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8am-6pm</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2020 Cosy Air Conditioners. All Rights Reserved. | Designed for comfort and efficiency</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+        
+            
+            
+            document.getElementById('successMessage').style.display = 'block';
+            
+            
+            this.reset();
+            
+            
+            setTimeout(function() {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+        });
+        
+        
+        const formInputs = document.querySelectorAll('.form-control');
+        
+        formInputs.forEach(input => {
+            
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            
+            input.addEventListener('blur', function() {
+                if (this.value === '') {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
