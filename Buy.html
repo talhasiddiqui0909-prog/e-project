@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | Cosy Airconditioners</title>
 
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather&display=swap"
         rel="stylesheet">
 
@@ -27,7 +27,7 @@
             --text-muted: #555;
         }
 
-        
+
         body {
             background-color: var(--bg-main);
             color: var(--text-dark);
@@ -41,21 +41,22 @@
 
         }
 
-        nav{
-      position: fixed;
-      font-weight: 700;
-      font-size: xx-large;
-    width: 100%;
+        nav {
+            position: fixed;
+            font-weight: 700;
+            font-size: xx-large;
+            width: 100%;
 
 
-}
- .navimg {
+        }
+
+        .navimg {
             margin-right: 5px;
             height: 70px;
             width: 70px;
         }
 
-    
+
         .phrase {
             background-color: var(--primary);
             padding: 20px 40px;
@@ -152,7 +153,7 @@
             font-weight: 600;
         }
 
-    
+
         .product-card {
             background: var(--bg-card);
             border-radius: 16px;
@@ -180,7 +181,7 @@
             object-fit: cover;
         }
 
-    
+
         .product-card h5 {
             font-weight: 600;
         }
@@ -201,7 +202,7 @@
             color: var(--text-muted);
         }
 
-        
+
         .btn-primary {
             background: var(--primary);
             border: none;
@@ -226,7 +227,7 @@
             background: var(--accent);
         }
 
-        
+
         .form-check-input:checked {
             background-color: var(--accent);
             border-color: var(--accent);
@@ -244,7 +245,7 @@
             border-bottom: 2px solid var(--accent);
         }
 
-        
+
         @media(max-width:992px) {
             .page {
                 grid-template-columns: 1fr;
@@ -263,7 +264,7 @@
         }
 
 
-        
+
         .hero-cooling {
             width: 100%;
             height: 360px;
@@ -310,14 +311,14 @@
         }
 
 
-        
+
         footer {
             background-color: #1a3a8f;
             color: white;
             padding: 60px 0 20px;
             margin-top: 60px;
         }
-        
+
         .footer-content {
             display: flex;
             flex-wrap: wrap;
@@ -325,12 +326,12 @@
             gap: 40px;
             margin-bottom: 40px;
         }
-        
+
         .footer-column {
             flex: 1;
             min-width: 220px;
         }
-        
+
         .footer-column h3 {
             font-size: 1.4rem;
             margin-bottom: 25px;
@@ -338,7 +339,7 @@
             position: relative;
             padding-bottom: 10px;
         }
-        
+
         .footer-column h3::after {
             content: '';
             position: absolute;
@@ -348,39 +349,41 @@
             height: 3px;
             background-color: #ffcc00;
         }
-        
+
         .footer-column ul {
             list-style: none;
         }
-        
+
         .footer-column ul li {
             margin-bottom: 15px;
         }
-        
+
         .footer-column ul li a {
             color: #ddd;
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .footer-column ul li a:hover {
             color: #ffcc00;
             padding-left: 5px;
         }
-        
+
         .footer-column p {
             margin-bottom: 15px;
             color: #ddd;
         }
-        
+
         .social-icons {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
-        a{
+
+        a {
             color: white;
         }
+
         .social-icons a {
             display: flex;
             align-items: center;
@@ -393,12 +396,12 @@
             font-size: 1.2rem;
             transition: all 0.3s;
         }
-        
+
         .social-icons a:hover {
             background-color: #ffcc00;
             transform: translateY(-5px);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 20px;
@@ -406,34 +409,35 @@
             color: #ddd;
             font-size: 0.9rem;
         }
-        
-        
+
+
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 gap: 20px;
             }
-            
+
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 15px;
             }
-            
+
             .contact-section {
                 flex-direction: column;
             }
-            
+
             .page-title h2 {
                 font-size: 2rem;
             }
-            
-            .contact-info, .contact-form {
+
+            .contact-info,
+            .contact-form {
                 padding: 30px;
             }
         }
-        
-        
+
+
         .success-message {
             display: none;
             background-color: #d4edda;
@@ -444,7 +448,6 @@
             text-align: center;
             border: 1px solid #c3e6cb;
         }
-
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -505,6 +508,10 @@
                 <span style="font-size:28px">🛒</span>
                 <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge bg-danger"></span>
             </div>
+
+             <button id="clearCart" class="btn btn-danger">
+            Empty Cart
+        </button>
         </div>
     </div>
 
@@ -548,7 +555,7 @@
         <main>
             <div class="row g-4" id="productGrid">
 
-                
+
                 <div class="col-md-6 col-lg-4 product" data-id="1" data-brand="LG" data-type="Inverter" data-cap="1.5"
                     data-price="135400">
                     <div class="product-card">
@@ -930,7 +937,8 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Cosy Airconditioners</h3>
-                    <p>Providing top-quality air conditioning solutions for residential and commercial clients since 2005. Your comfort is our priority.</p>
+                    <p>Providing top-quality air conditioning solutions for residential and commercial clients since
+                        2005. Your comfort is our priority.</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -938,7 +946,7 @@
                         <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
@@ -948,27 +956,30 @@
                         <li><a href="Contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Our Services</h3>
                     <ul>
-                        <li><a ><i class="fas fa-snowflake"></i> AC Installation</a></li>
-                        <li><a ><i class="fas fa-tools"></i> AC Repair</a></li>
-                        <li><a ><i class="fas fa-clipboard-check"></i> Maintenance Plans</a></li>
-                        <li><a ><i class="fas fa-filter"></i> Air Quality Solutions</a></li>
-                        <li><a ><i class="fas fa-home"></i> Smart Home Integration</a></li>
+                        <li><a><i class="fas fa-snowflake"></i> AC Installation</a></li>
+                        <li><a><i class="fas fa-tools"></i> AC Repair</a></li>
+                        <li><a><i class="fas fa-clipboard-check"></i> Maintenance Plans</a></li>
+                        <li><a><i class="fas fa-filter"></i> Air Quality Solutions</a></li>
+                        <li><a><i class="fas fa-home"></i> Smart Home Integration</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Jameel Jalabi, Road, Block-B North Nazimabad Town, Karachi, Pakistan</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jameel Jalabi, Road, Block-B North Nazimabad Town, Karachi,
+                        Pakistan</p>
                     <p><i class="fas fa-phone-alt"></i> (+92) 313-2665989</p>
-                    <p><i class="fas fa-envelope"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPvbxnpsKqLDjrSXLpRgJsWhwKpwFRgGMVMZfJffFFLrXfdFwjVCBnMphGgxprpjGMZjlG"  target="_blank"> airconditon37@gmail.com</a></p>
+                    <p><i class="fas fa-envelope"></i><a
+                            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPvbxnpsKqLDjrSXLpRgJsWhwKpwFRgGMVMZfJffFFLrXfdFwjVCBnMphGgxprpjGMZjlG"
+                            target="_blank"> airconditon37@gmail.com</a></p>
                     <p><i class="fas fa-clock"></i> Mon-Fri: 8am-6pm</p>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p>&copy; 2020 Cosy Air Conditioners. All Rights Reserved. | Designed for comfort and efficiency</p>
             </div>
@@ -989,13 +1000,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        let cartCount = 0;
+
+
+        let cartCount = localStorage.getItem("cartCount");
+        cartCount = cartCount ? parseInt(cartCount) : 0;
+
+        $("#cartCount").text(cartCount);
+
 
         $(document).on("click", ".ADD", function () {
             cartCount++;
-            $('#cartCount').text(cartCount);
+            localStorage.setItem("cartCount", cartCount);
+            $("#cartCount").text(cartCount);
             alert("Your item has been added to cart 🛒");
         });
+
+
+    $("#clearCart").on("click", function () {
+        localStorage.removeItem("cartCount");
+        cartCount = 0;
+        $("#cartCount").text(cartCount);
+        alert("Cart has been emptied 🗑️");
+    });
+
 
 
         function filter() {
